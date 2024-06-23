@@ -1,3 +1,5 @@
+import 'package:advanced_test/core/Helpers/extensions.dart';
+import 'package:advanced_test/core/Routing/routes.dart';
 import 'package:advanced_test/core/theming/colors.dart';
 import 'package:advanced_test/core/theming/style.dart';
 import 'package:flutter/material.dart';
@@ -13,7 +15,9 @@ class GetStartedBottom extends StatelessWidget {
           tapTargetSize: MaterialTapTargetSize.shrinkWrap,
           minimumSize:
               MaterialStateProperty.all(const Size(double.infinity, 52))),
-      onPressed: () {},
+      onPressed: () {
+        context.pushNamed(Routes.loginScreen);
+      },
       child: Text('Get Started', style: CustomTextStyles.font32WhiteBold),
     );
   }
