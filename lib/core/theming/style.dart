@@ -15,7 +15,9 @@ class CustomTextStyles {
       color: ColorsManager.mainblue);
 
   static TextStyle font32WhiteBold = TextStyle(
-      fontSize: 20.sp, fontWeight: FontWeight.bold, color: ColorsManager.white);
+      fontSize: 20.sp,
+      fontWeight: FontWeightHelpers.bold,
+      color: ColorsManager.white);
 
   static TextStyle font24blueBold = TextStyle(
       fontSize: 24.sp,
